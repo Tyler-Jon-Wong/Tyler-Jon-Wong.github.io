@@ -1,0 +1,258 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  color: #747474;
+  font-size: 50px;
+}
+
+p{
+  padding: 20px 20px 20px 20px;
+  color: #747474;
+}
+
+span{
+  color: #747474;
+}
+
+ul{
+  color:  #747474;
+}
+
+.sidebar{
+  z-index: 111;
+  top:0;
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #1a1a1a;
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #171717;
+  user-select: none;
+}
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  transition:0.3s;
+  opacity: 0.8;
+}
+ul li:hover a{
+  padding-left: 45px;
+  opacity: 1;
+}
+.sidebar ul a i{
+  margin-right: 8px;
+}
+#check{
+  display: none;
+}
+label{
+  display: inline;
+}
+label #menu-open,label #menu-close{
+  position: fixed;
+  cursor: pointer;
+  z-index: 1111;
+}
+label #menu-open{
+  left: 40px;
+  top: 15px;
+  font-size: 25px;
+  color: #24a7ff;
+  padding: 0px 6px;
+  transition: all .5s;
+  background-color: #242424;
+  border-radius: 10px;
+}
+
+label #menu-close{
+
+  left: -195px;
+  top: 15px;
+  color: white;
+  font-size: 30px;
+  padding: 4px 9px;
+  transition: all .5s;
+
+}
+#check:checked ~ .sidebar{
+  left:0;
+}
+#check:checked ~ label #menu-open{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #menu-close{
+  left:195px;
+}
+
+.profile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.lead-cover{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  background-color: #272727;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 0;
+}
+.lead{
+  background: url("../assets/portrait.PORTRAIT_2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+  z-index: -1;
+}
+.lead h1{
+  z-index: 11;
+  weight: bold;
+  color: white;
+}
+
+.lead p{
+  z-index: 11;
+  color: white;
+}
+
+.bracket{
+  color: #24a7ff;
+}
+
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social{
+  position: relative;
+}
+
+.social a{
+  bottom:0;
+  font-size: 20px;
+  color: white;
+  padding-right: 10px;
+}
+
+.title{
+  font-size: 50px;
+  color: white;
+}
+
+.typed-dynamic{
+  color: #24a7ff;
+}
+
+.typed-dynamic::after {
+  color: white;
+  content: "|";
+  animation: blinkFade 1s infinite;
+}
+
+@keyframes blinkFade {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+
+
+.content{
+  padding: 50px 50px 50px 50px;
+  background-color: #272727;
+}
+
+.about h1{
+  color: #FF652F;
+}
+
+.projects{
+  background-color: #242424;
+}
+
+.projects h1{
+  color: #FFE400;
+}
+
+.project-grid p{
+  color:#FFE400
+}
+
+.projects img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.projects .col a:hover img{
+  opacity: 0.5;
+}
+
+.projects ul li:hover a{
+  padding-left: 0px;
+}
+
+.col{
+  padding: 10px 10px 10px 10px;
+}
+
+.project-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #1f1f1f;
+}
+
+.project-content{
+  background: #272727;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+
+}
+
+.project-content h1{
+  color: #FFE400;
+  padding: 20px 10px 20px 10px;
+
+}
+
+.project-content p{
+  background-color: #1f1f1f;
+  padding: 20px 20px;
+}
+
+.project-content ul li:hover a{
+  padding-left: 0px;
+}
+
+.contact h1{
+  color: #14A76C;
+}

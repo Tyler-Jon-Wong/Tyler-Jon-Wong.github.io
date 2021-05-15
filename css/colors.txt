@@ -1,0 +1,6 @@
+Black: #272727
+Text: #747474
+Orange: #FF652F
+Yellow: #FFE400
+Green: #14A76C
+Blue: #24a7ff
