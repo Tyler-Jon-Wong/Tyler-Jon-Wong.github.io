@@ -1,0 +1,5 @@
+Yellow: #F8E9A1
+Red: #F76C6C
+Blue: #374785
+Dark Blue: #24305E
+Light Blue: #A8D0E6
